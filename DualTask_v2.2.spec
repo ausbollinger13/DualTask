@@ -5,12 +5,16 @@
 # Excluding them — along with unrelated dev-machine packages that previous
 # specs accidentally pulled in via collect_submodules('openpyxl') — keeps the
 # build to a normal size instead of ballooning to 300+ MB.
+import os
+
 a = Analysis(
     ['dual_task.py'],
     pathex=[],
     binaries=[],
     # passcode.txt is git-ignored; create it locally (one line) before building.
-    datas=[('images\\neuro_logo.ico', 'images'), ('passcode.txt', '.')],
+    # If it's absent the build still succeeds, but parameters can't be unlocked.
+    datas=[('images\\neuro_logo.ico', 'images')]
+          + ([('passcode.txt', '.')] if os.path.exists('passcode.txt') else []),
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
