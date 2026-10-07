@@ -85,3 +85,7 @@ Task parameters are locked behind a passcode so subjects can't change them by ac
 - **In a downloaded release:** put `passcode.txt` inside the `_internal` folder.
 
 If no passcode file is found, the unlock dialog says so and the parameters stay at their defaults.
+
+## License
+
+[MIT](LICENSE)
