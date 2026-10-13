@@ -1,6 +1,6 @@
 # DualTask
 
-A Windows desktop app for running a dual-task experiment. The subject keeps a mouse cursor inside a randomly moving target while typing 4-digit codes with the other hand. Each trial's raw data and summary scores are saved to an Excel file.
+A Windows desktop app for running a cognitive dual-task experiment. The subject is instructed to keep a mouse cursor inside a randomly moving target while typing 4-digit codes with the other hand. Each trial's raw data and summary scores are saved to an Excel file.
 
 Developed in the NASA Neuroscience Lab by Austin Bollinger.
 
